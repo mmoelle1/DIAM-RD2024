@@ -7,7 +7,3 @@ jupyter nbextension enable splitcell/splitcell
 # Download Eigen
 curl -s https://gitlab.com/libeigen/eigen/-/archive/3.4.0/eigen-3.4.0.tar.bz2 | tar -xjf - -C $HOME/
 mv $HOME/eigen-3.4.0 $HOME/eigen
-
-# Update startup script
-mkdir -p $HOME/.ipython/profile_default/startup/
-echo '#pragma cling add_include_path("/home/jovyan/eigen")'> $HOME/.ipython/profile_default/startup/eigen.ipynb
