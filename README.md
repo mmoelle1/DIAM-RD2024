@@ -15,9 +15,9 @@ including the GitHub actions.
 
 [badge-pages-slides]: https://img.shields.io/badge/static-slides-579ACA.svg?style=flat-square
 
-[binder-jupyterlab-slides]: https://mybinder.org/v2/gh/mmoelle1/DIAM-RD2024/binder?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252Fmmoelle1%252FDIAM-RD2024%26urlpath%3Dlab%252Ftree%252FDIAM-RD2024%252Fnotebooks%252slides.ipynb%26branch%3D2024
+[binder-jupyterlab-slides]: https://mybinder.org/v2/gh/mmoelle1/DIAM-RD2024/binder?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252Fmmoelle1%252FDIAM-RD2024%26urlpath%3Dlab%252Ftree%252FDIAM-RD2024%252Fnotebooks%252Fslides.ipynb%26branch%3D2024
 
 [binder-jupyternb-slides]:
 https://mybinder.org/v2/gh/mmoelle1/DIAM-RD2024/binder?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252Fmmoelle1%252FDIAM-RD2024%26urlpath%3Dtree%252FDIAM-RD2024%252Fnotebooks%252Fslides.ipynb%26branch%3D2024
 
-[pages-slides]: https://mmoelle1.github.io/DIAM-RD2024/_static/slides.html
+[pages-slides]: https://mmoelle1.github.io/DIAM-RD2024/_static/slides.slides.html
