@@ -10,4 +10,4 @@ mv $HOME/eigen-3.4.0 $HOME/eigen
 
 # Update startup script
 mkdir -p $HOME/.ipython/profile_default/startup/
-cat "#pragma cling add_include_path(\"/home/jovyan/eigen\")" >> $HOME/.ipython/profile_default/startup/eigen.ipynb
+echo '#pragma cling add_include_path("/home/jovyan/eigen")'> $HOME/.ipython/profile_default/startup/eigen.ipynb
