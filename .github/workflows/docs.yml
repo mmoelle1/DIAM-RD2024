@@ -19,7 +19,7 @@ jobs:
       run: pip install -r ./docs/requirements.txt
 
     - name: create slides
-      run: jupyter nbconvert --to slides --embed-images --SlidesExporter.reveal_theme=simple --SlidesExporter.reveal_scroll=True --CSSHTMLHeaderPreprocessor.style=notebooks/rise.css --output-dir docs/source/_static "notebooks/*.ipynb"
+      run: jupyter nbconvert --to slides --embed-images --output-dir docs/source/_static "notebooks/*.ipynb"
 
     - name: convert md to rst # md reference is not recognized with md_include
       uses: docker://pandoc/core:latest
