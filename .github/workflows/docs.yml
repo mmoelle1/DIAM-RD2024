@@ -16,10 +16,24 @@ jobs:
         python-version: "3.10"
 
     - name: install dependencies
-      run: pip install -r ./docs/requirements.txt
+      run: |
+        pip install -r ./docs/requirements.txt
+        sudo apt-get install -y wkhtmltopdf
 
-    - name: create slides
-      run: jupyter nbconvert --to slides --embed-images --template reveal --output-dir docs/source/_static "notebooks/*.ipynb"
+    - name: create slides 
+      run: |
+        jupyter nbconvert --to slides --embed-images --template reveal --output-dir docs/source/_static "notebooks/*.ipynb"
+    
+    - name: Convert notebooks to PDF
+      run: |
+        for html_file in docs/source/_static/*.html; do
+            # Create the PDF file name from the HTML file name
+            pdf_file="${html_file%.html}.pdf"
+            
+            # Convert HTML to PDF using wkhtmltopdf (or replace with google-chrome for headless conversion)
+            wkhtmltopdf --orientation landscape "$html_file" "$pdf_file"
+            
+          done
 
     - name: convert md to rst # md reference is not recognized with md_include
       uses: docker://pandoc/core:latest
